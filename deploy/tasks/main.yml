@@ -14,6 +14,11 @@
 - name: excute backup.sh
   command: sh /home/ram/backup.sh
 
+- name: install wget
+  apt:
+    name: wget
+    state: present
+
 - name: excute deploy.sh
   command: sh /home/ram/deploy.sh
 
