@@ -1,0 +1,2 @@
+[appserver]
+54.80.182.241 ansible_ssh_user=ram ansible_ssh_pass=ram

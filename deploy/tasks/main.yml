@@ -1,0 +1,22 @@
+---
+- name: backu.sh file
+  template:
+    src: backup.sh
+    dest: /home/ram/
+    mode: 0755
+
+- name: deploy.sh
+  template:
+    src: deploy.sh
+    dest: /home/ram
+    mode: 0755
+
+- name: excute backup.sh
+  command: sh /home/ram/backup.sh
+
+- name: excute deploy.sh
+  command: sh /home/ram/deploy.sh
+
+  notify:
+    - name: restart tomcat
+# tasks file for deploy
