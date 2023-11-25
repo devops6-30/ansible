@@ -21,7 +21,6 @@
 
 - name: excute deploy.sh
   command: sh /home/ram/deploy.sh
-
   notify:
     - name: restart tomcat
 # tasks file for deploy
